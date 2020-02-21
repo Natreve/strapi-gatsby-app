@@ -1,8 +1,6 @@
 # Dockerized Gatbsy site powered by Strapi
 
-> Dockerized backend powered by Strapi
-> Dockerized frontend powered by Gatsby + NodeJS
-> Rebuild Gatsby site with a webhook
+> Dockerized backend and frontend application powered by Strapi and Gatsby. Rebuild Gatsby site with webhook powered by NodeJS and Express.
 
 ## Quick Start
 
