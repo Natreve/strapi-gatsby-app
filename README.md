@@ -1,17 +1,21 @@
-# Dockerized NodeJS webhook gatsby builder
+# Dockerized Gatbsy site powered by Strapi
 
-> Dockerized a Node + Gatsby app
-> Enable rebuild of gatsby app with webhook
+> Dockerized backend powered by Strapi
+> Dockerized frontend powered by Gatsby + NodeJS
+> Rebuild Gatsby site with a webhook
 
 ## Quick Start
 
+In order to get up and running add a **.env** file to the root of your folder. Specify a **TOKEN** value. This is important for the webhook in order to trigger a rebuild of your Gatsby site.
+
+Before running the commands to create the docker images and containers, make sure that
+the values in the **docker-compose.yml** file for **strapiCMS** match up with your own values. The database of choice is mongodb so ensure you have a mongodb container or application running for strapi to connect to.
+
 ```bash
-# Run in Docker in background
+# Run the Docker container in background
 docker-compose up -d
 
-# Tear down
-docker-compose down
+# List the runing containers
+docker ps
 
-# To re-build
-docker-compose build
 ```
