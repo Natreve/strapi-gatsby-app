@@ -4,7 +4,8 @@
   "description": "A Gatsby node webhook to build a new static website.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "setup": "node ./setup/install.js"
   },
   "author": "Andrew Gray",
   "license": "ISC",

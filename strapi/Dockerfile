@@ -1,27 +1,15 @@
-FROM strapi/base
+FROM node:10
 
 RUN mkdir -p /src
 
-WORKDIR /src
-
-COPY package.json /src
-# COPY *.lock /src
-
-RUN yarn install
-
 COPY . /src
 
-RUN yarn build
+WORKDIR /src
 
-EXPOSE 1337
+RUN npm install
 
-ENV NODE_ENV production
-ENV HOST localhost
-ENV DATABASE_CLIENT mongo
-ENV DATABASE_HOST 127.0.0.1
-ENV DATABASE_PORT 27017
-ENV DATABASE_NAME strapi
-ENV DATABASE_USERNAME strapi
-ENV DATABASE_PASSWORD strapi
+COPY . .
 
-CMD ["yarn", "start"]
+EXPOSE 3000
+
+CMD ["npm", "start"]

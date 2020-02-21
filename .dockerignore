@@ -1,6 +1,7 @@
 node_modules
 npm-debug.log
-*strapi
+strapi
+setup
 gatsby/node_modules
 gatsby/.cache
 *.yaml
