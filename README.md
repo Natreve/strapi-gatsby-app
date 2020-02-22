@@ -30,6 +30,7 @@ npm run develop
 # This commits all your custom changes to strapi before making your docker image
 npm run build
 
+# You can terminate strapi and nodejs before running the docker-compose
 # Creates a Docker image and container and/or runs the container in the background
 docker-compose up -d
 

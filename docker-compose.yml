@@ -21,6 +21,7 @@ services:
     volumes:
       - ./strapi:/src
     environment:
+      HOST: 192.168.99.100
       DATABASE_CLIENT: mongo
       DATABASE_HOST: 192.168.99.100
       DATABASE_PORT: 27017
