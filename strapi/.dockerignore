@@ -1,7 +1,0 @@
-node_modules
-npm-debug.log
-strapi
-setup
-gatsby/node_modules
-gatsby/.cache
-*.yaml
