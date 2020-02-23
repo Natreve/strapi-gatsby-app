@@ -1,4 +1,8 @@
 /*jshint esversion: 6 */
+require("dotenv").config({
+  path: '../.env'
+});
+console.log(`Using environment config: '${process.env.STRAPI_API_URL}'`);
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,

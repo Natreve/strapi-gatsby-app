@@ -4,8 +4,8 @@ RUN mkdir -p /src
 
 WORKDIR /src
 
-COPY package.json /src
-# COPY *.lock /src
+COPY ./package.json /src
+COPY ./yarn.lock /src
 
 RUN yarn install
 
