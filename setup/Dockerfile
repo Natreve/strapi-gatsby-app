@@ -4,14 +4,13 @@ RUN mkdir -p /src
 
 WORKDIR /src
 
-COPY ./package.json /src
-COPY ./yarn.lock /src
+COPY . /src
 
-RUN yarn install
+RUN npm install
 
 COPY . /src
 
-RUN yarn build
+RUN npm build
 
 EXPOSE 1337
 
@@ -24,4 +23,4 @@ ENV DATABASE_NAME strapi
 ENV DATABASE_USERNAME strapi
 ENV DATABASE_PASSWORD strapi
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
