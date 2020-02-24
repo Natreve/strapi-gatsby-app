@@ -2,6 +2,12 @@
 
 > Dockerized backend and frontend application powered by Strapi and Gatsby. Rebuild Gatsby site with webhook powered by NodeJS and Express.
 
+## Prerequisite
+
+- Node 10 or greater installed
+- Docker installed
+- Gatsby CLI installed
+
 ## Quick Start
 
 In order to get up and running add a **.env** file to the root of your folder. Specify a **TOKEN**, **PORT**, **HOST**, **STRAPI_API_URL**, **DATABASE_HOST** and **DATABASE_PORT**. The TOKEN is important for the webhook to trigger a rebuild of your Gatsby site, then PORT is used for to access the gatbsy site and webhook on the host, the HOST is the address of the strapi container and STRAPI_API_URL is needed for gatsby in order to connect to the strapi backend server, and finally the DATABASE_HOST and DATABSE_PORT is for your mongodb database you had set up.
