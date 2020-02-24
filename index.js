@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 require("dotenv").config();
 const express = require("express");
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const path = require("path");
 const bodyParser = require("body-parser");
 const app = express().use(bodyParser.json());
