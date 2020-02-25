@@ -22,6 +22,9 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' con
 ```
 
 ```bash
+# Install all the dependancies for the Nodejs webhook and site server
+npm install
+
 # Runs the setup script to create a strapi project for development & production and basic landing page for the gatsby website.
 npm run setup
 
