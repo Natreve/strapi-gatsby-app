@@ -4,7 +4,7 @@ RUN mkdir -p /src
 
 WORKDIR /src
 
-COPY . /src
+COPY ./package.json /src
 
 RUN npm install
 
@@ -17,7 +17,7 @@ EXPOSE 1337
 ENV NODE_ENV production
 ENV HOST localhost
 ENV DATABASE_CLIENT mongo
-ENV DATABASE_HOST 127.0.0.1
+ENV DATABASE_HOST localhost
 ENV DATABASE_PORT 27017
 ENV DATABASE_NAME strapi
 ENV DATABASE_USERNAME strapi

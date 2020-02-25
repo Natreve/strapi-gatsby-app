@@ -2,6 +2,7 @@
 const shell = require("shelljs");
 const child_process = require("child_process");
 
+shell.exec("npm install");
 shell.mkdir("-p", "gatsby/public");
 shell.cp("setup/index.html", "gatsby/public");
 
